@@ -6,11 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class BotherController {
+public class IndexController {
 
-    @GetMapping("/bother")
-    public String index(@RequestParam(name="name",required = false, defaultValue="690") String name, Model model) {
-        model.addAttribute("name", name);
-        return "bother";
+    @GetMapping("/Index")
+    public String index(){
+        return "Index";
     }
 }
